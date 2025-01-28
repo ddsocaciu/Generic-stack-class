@@ -1,5 +1,7 @@
+package Stackpackage;
+
 /**
- * Class Stack which is a Generic class with methods such as push, pop, peek & list
+ * Class Stackpackage.Stack which is a Generic class with methods such as push, pop, peek & list
  *
  * @author David Socaciu
  * @version 2025-01-18
@@ -69,7 +71,7 @@ public class Stack<T> {
      */
     public T peek() throws StackEmptyException {
         if (size == 0) {
-            throw new StackEmptyException("Stack is empty.");
+            throw new StackEmptyException("Stackpackage.Stack is empty.");
         }
         return array[size - 1];
     }

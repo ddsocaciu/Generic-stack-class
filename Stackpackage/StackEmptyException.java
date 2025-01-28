@@ -1,5 +1,7 @@
+package Stackpackage;
+
 /**
- * Class StackEmptyException throws a StackEmptyException
+ * Class Stackpackage.StackEmptyException throws a Stackpackage.StackEmptyException
  *
  * @author David Socaciu
  * @version 2025-01-18
