@@ -27,7 +27,7 @@ public class Stack<T> {
      * @param cap
      */
     public Stack(int cap){
-        if(this.cap <= 0){
+        if(cap <= 0){
             this.cap = 5;
             System.err.println("Capacity was negative or zero. New Capacity is 5");
         }else{
@@ -46,7 +46,7 @@ public class Stack<T> {
         if(this.size >= this.cap){
             throw new StackFullException("The stack is fulled up");
         }
-        array[this.size] = item;
+        array[this.size++] = item;
     }
 
     /**
@@ -58,9 +58,9 @@ public class Stack<T> {
         if(this.size == 0){
             throw new StackEmptyException("The stack is empty");
         }
-        T array = this.array[--this.size];
+        T item = this.array[--this.size];
         this.array[this.size] = null;
-        return array;
+        return item;
     }
 
     /**
